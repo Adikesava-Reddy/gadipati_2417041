@@ -1,0 +1,10 @@
+package Selenium100too;
+
+public class testingdomain_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
