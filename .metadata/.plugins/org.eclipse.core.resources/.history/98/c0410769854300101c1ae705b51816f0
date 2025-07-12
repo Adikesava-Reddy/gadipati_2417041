@@ -1,0 +1,33 @@
+package javaintroduction;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Streams_2 {
+
+	public static void main(String[] args) {
+		// Convert a list of strings to uppercase.
+		ArrayList<String> name = new ArrayList<String>();
+		// List<String> words = Arrays.asList("apple", "banana", "cherry");
+
+		name.add("apple");
+		name.add("banana");
+		name.add("cherry");
+
+		// name.stream().map(D->D.toUpperCase()).forEach(D->System.out.println(D));
+
+		// Find the count of strings with length greater than 3.
+		Long A = name.stream().filter(S -> S.length() > 3).count();
+		System.out.println(A);
+		// Find the sum of all elements in a list.
+		 List<String> nam = Arrays.asList("Ashok","Don","Alekhya","Rama","Abhijeet");
+		
+		
+		 public static List<Integer> asList(int i, int j, int k, int l, int m) {
+				return null;
+	
+
+	}
+}
+

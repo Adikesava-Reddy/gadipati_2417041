@@ -1,0 +1,31 @@
+package rahulshettyinterviewquestions;
+
+public class SwaptwogivenStrings {
+
+	public static void main(String[] args) {
+		
+//		String name1 = "baree";
+//		String name2 = "pandi";
+//		String swap = name1;
+//		
+//		name1 = name2;
+//		name2=swap;
+//		
+//		System.out.println(name1);
+//		System.out.println(name2);
+		
+		String a = "ravi";
+		String b = "sujay";
+		String swap = a;
+		
+		a=b;
+		b=swap;
+		
+		System.out.println(a);
+		System.out.println(b);
+	    
+		
+
+	}
+
+}

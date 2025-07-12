@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="https:adikesava.com"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testngtutorial.day4">
+        <methods>
+          <include name="demo10"/>
+          <include name="demo11"/>
+          <include name="demo12"/>
+          <include name="demo13"/>
+        </methods>
+      </class> <!-- testngtutorial.day4 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

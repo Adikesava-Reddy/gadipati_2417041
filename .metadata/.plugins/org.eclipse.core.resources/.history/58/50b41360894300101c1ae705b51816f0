@@ -1,0 +1,58 @@
+package javaintroduction;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Streams {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> name = new ArrayList<String>();
+
+		name.add("Ashok");
+		name.add("Don");
+		name.add("Alekhya");
+		name.add("Ram");
+		name.add("Abhijeet");
+		// it indicates starting letter result will be count
+        Long A = name.stream().filter(S->S.startsWith("A")).count();
+//        
+//        System.out.println(A);
+//        
+//        Long D = Stream.of("Ashok","Don","Alekhya","Ram","Abhijeet").filter(S->
+//        {
+//        	S.startsWith("A");
+//        	return true;
+//        }).count();
+//        System.out.println(D);
+//        
+//        // print all letters in a name based on given length -> it will print all the names
+//        name.stream().filter(S->S.length()>4).forEach(S->System.out.println(S));
+//        
+		// print single name which is given by length
+		//name.stream().filter(S -> S.length() > 4).limit(2).forEach(S -> System.out.println(S));
+//      
+//        //print name which have last letter as "A" with upper case 
+//        Stream.of("Ashok","Don","Alekhya","Rama","Abhijeet").filter(S->S.endsWith("a")).map(S->S.toUpperCase())
+//        .forEach(S->System.out.println(S));
+//        
+//        //print name which have first letter as "A" with upper case and sorted
+//        
+        //List<String> names = Arrays.asList(name);
+        
+       // name.stream().filter(S->S.startsWith("A")).sorted().map(S->S.toUpperCase()).forEach(S->System.out.println(S));
+//        
+//        //collector's this one use to print only single word in a list
+//        
+//        List<String> LS = Stream.of("Ashok","Don","Alekhya","Rama","Abhijeet").filter(S->S.endsWith("a")).map(S->S.toUpperCase()).collect(Collectors.toList());
+//        System.out.println(LS);
+		
+       // Convert a list of strings to uppercase using map().
+        name.stream().map(S->S.toUpperCase()).forEach(S->System.out.println());
+
+
+	}
+
+}

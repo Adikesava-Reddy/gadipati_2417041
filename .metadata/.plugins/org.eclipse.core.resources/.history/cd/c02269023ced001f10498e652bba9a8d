@@ -1,0 +1,34 @@
+package rahulshettyinterviewquestions;
+
+import java.util.Scanner;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		
+		
+		
+//		String a = "KATIMI";
+//		String reverse ="";
+//		char r;
+//		for(int i=0; i<a.length(); i++) {
+//			r=a.charAt(i);
+//			System.out.println(r);
+//			reverse = r+reverse;
+//			System.out.println(reverse);
+//		}
+//		System.out.println(reverse);
+		
+		
+		String B = "Bhagiii";
+		String D ="";
+		char G;
+		for(int i=0; i<B.length(); i++) {
+			G=B.charAt(i);
+			D=G+D;
+		}
+		System.out.println(D);
+
+	}
+
+}

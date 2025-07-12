@@ -1,0 +1,46 @@
+package Introduction;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BhagiAssignments {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		
+		System.setProperty("webdriver.chrome.driver", "C:/Users/adike/OneDrive/Desktop/chromedriver-win64/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
+		driver.get("https://www.google.com/recaptcha/api2/demo");
+		//Thread.sleep(2000);
+//		driver.findElement(By.xpath("(//span[@class='VGMdYn'])[1]")).click();
+//		driver.findElement(By.id("input_comp-kaoxkn4j")).sendKeys("CHINNA");
+//		driver.findElement(By.id("input_comp-kaoxkn4o")).sendKeys("REDDY");
+//		driver.findElement(By.id("input_comp-kaoxkn4s")).sendKeys("adikesavareddy6007@gmail.com");
+//		driver.findElement(By.id("input_comp-kaoxkn4w")).sendKeys("#Ida_Kat3517");
+//		driver.findElement(By.id("input_comp-kaoxr1ae")).sendKeys("9182003517");
+//		driver.findElement(By.id("input_comp-karpvdv0")).sendKeys("BANGALORE");
+//		driver.findElement(By.xpath("(//span[@class='l7_2fn wixui-button__label'])[3]")).click();
+//		driver.findElement(By.id("recaptcha-anchor")).click();
+		driver.findElement(By.xpath("//div[@role='presentation'][2]")).click();
+		driver.findElement(By.id("recaptcha-demo-submit")).click();
+		String a = "Verification Success... Hooray!";
+		if(a.equals("Verification Success... Hooray!")) {
+			
+			System.err.println("yes");
+			
+		}
+		else {
+			
+			System.err.println("no");
+		}
+		
+		
+
+	}
+
+}
